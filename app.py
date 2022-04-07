@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Connecting the Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://vuhpgwaiqfuaza:0f15c00c9561443d7638464e0a6a846531f671ad038d1e4f02ca40b795cf2c01@ec2-3-217-251-77.compute-1.amazonaws.com:5432/ddjc9pncpi5cf1'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://vuhpgwaiqfuaza:0f15c00c9561443d7638464e0a6a846531f671ad038d1e4f02ca40b795cf2c01@ec2-3-217-251-77.compute-1.amazonaws.com:5432/ddjc9pncpi5cf1'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']= False         
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
